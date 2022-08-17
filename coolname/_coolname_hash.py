@@ -44,3 +44,6 @@ def pseudohash_slug_v1(arg: Union[int, str, bytes]) -> str:
     for the given argument (int, str or bytes).
     """
     return '-'.join(pseudohash_tuple_v1(arg))
+
+def get_hash_name(arg: Union[int, str, bytes]) -> str:
+    return pseudohash_slug_v1(arg).replace("-", " ").title().replace("Of", "of")

@@ -6,6 +6,6 @@ __version__ = '1.1.0'
 from .exceptions import InitializationError
 from .impl import generate, generate_slug, get_combinations_count,\
     RandomGenerator, replace_random
-from ._coolname_hash import pseudohash_slug_v1
+from ._coolname_hash import pseudohash_slug_v1 ,get_hash_name
 
 
